@@ -1,0 +1,17 @@
+{
+    "name": "solved Extension",
+    "description": "잔디밭 색깔 선택 기능을 Solved 확장 프로그램을 통해 사용해보세요.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions":[
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["https://solved.ac/profile/*"],
+        "all_frames": true,
+        "css":["css/style.css"],
+        "js": [ "js/profile.js" ]
+        }
+    ]
+}
